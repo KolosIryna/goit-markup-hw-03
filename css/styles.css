@@ -114,6 +114,7 @@ img {
 }
 .header-page {
   display: flex;
+  align-items: center;
 }
 .nav-page {
   display: flex;
@@ -150,8 +151,6 @@ img {
 .menu {
   display: flex;
   gap: 40px;
-
-  align-items: center;
 }
 .menu-header {
   font-weight: 500;
@@ -188,7 +187,6 @@ img {
   display: flex;
   gap: 40px;
 }
-
 /* .address .item:not(:last-child) {
   margin-right: 40px;
 } */
@@ -397,6 +395,7 @@ img {
 .card-content {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
+  border-top: none;
 }
 /**
   |============================
