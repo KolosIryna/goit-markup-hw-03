@@ -150,6 +150,8 @@ img {
 .menu {
   display: flex;
   gap: 40px;
+
+  align-items: center;
 }
 .menu-header {
   font-weight: 500;
@@ -184,10 +186,12 @@ img {
 }
 .address.list {
   display: flex;
+  gap: 40px;
 }
-.address .item:not(:last-child) {
+
+/* .address .item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 /*Ще один спосіб
  .address .item + .item {
   margin-left: 40px;
@@ -209,7 +213,6 @@ img {
   |============================
 */
 .hero {
-  text-align: center;
   padding: 188px 0;
 
   background-color: var(--bgr-navy-blue);
