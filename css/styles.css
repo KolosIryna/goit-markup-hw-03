@@ -338,8 +338,9 @@ img {
   |============================
 */
 .section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  /* padding-top: 96px;
+  padding-bottom: 120px; */
+  padding: 96px 120px;
 }
 
 .btn-navigation {
