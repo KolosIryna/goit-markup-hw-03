@@ -39,6 +39,7 @@
   --indent: 24px;
   --indent-b: 48px;
   --items: 3;
+  --items-b: 4;
 }
 
 body {
@@ -263,7 +264,7 @@ img {
   gap: var(--indent);
 }
 .functions {
-  min-width: 264px;
+  width: calc((100% - (var(--indent) * (var(--items-b) - 1))) / var(--items-b));
 }
 .section-heading {
   margin-bottom: 8px;
@@ -327,10 +328,10 @@ img {
 }
 .items {
   background-color: var(--withe-color);
+  border-radius: 0px 0px 4px 4px;
 }
 .name-position {
   padding: 32px 16px;
-  border-radius: 0px 0px 4px 4px;
 }
 /**
   |============================
@@ -338,9 +339,8 @@ img {
   |============================
 */
 .section-portfolio {
-  /* padding-top: 96px;
-  padding-bottom: 120px; */
-  padding: 96px 120px;
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .btn-navigation {
@@ -387,10 +387,7 @@ img {
 }
 
 .card-set-item {
-  width: calc(
-    (100% - var(var(--indent) * 2 (var(--items) - 1))) / var(--items)
-  );
-  /*  width: calc((100% - 48px) / 3); */
+  width: calc((100% - (var(--indent) * (var(--items) - 1))) / var(--items));
 }
 
 .card-content {
@@ -411,6 +408,8 @@ img {
 
 .footer-logo {
   display: inline-block;
+  margin-right: 0;
+  padding: 0;
   margin-bottom: 16px;
 }
 .footer-text {
